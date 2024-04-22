@@ -6,8 +6,16 @@ import Layout from '../layouts/Layout.astro';
 	<main>
 		<div class="h-screen flex flex-col justify-center items-center">
 			<div>
-				<a href="mailto:hey@mikedloss.co" class="transition-colors hover:text-westar-900">hey@mikedloss.co</a>
+				<a href="mailto:hey@mikedloss.co" class="mail-link">hey@mikedloss.co</a>
 			</div>
 		</div>
 	</main>
 </Layout>
+
+<style>
+	.mail-link {
+		@apply transition-colors;
+		@apply hover:text-westar-900;
+		@apply font-bold;
+	}
+</style>

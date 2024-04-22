@@ -8,7 +8,7 @@ export default {
       westar: {
         50: '#f7f7f5',
         100: '#edece7',
-        200: '#e3e1d9',
+        200: '#e3e1d9', // generated from this
         300: '#c3bfae',
         400: '#aaa28d',
         500: '#998d76',
@@ -23,7 +23,7 @@ export default {
         100: '#dfe9ee',
         200: '#c2d4df',
         300: '#98b6c8',
-        400: '#6991ac',
+        400: '#6991ac', // generated from this
         500: '#4a7290',
         600: '#405e7a',
         700: '#394f65',
@@ -36,7 +36,7 @@ export default {
         100: '#e5eae1',
         200: '#cbd5c5',
         300: '#a6b79e',
-        400: '#7c9473',
+        400: '#7c9473', // generated from this
         500: '#5c7653',
         600: '#455d3e',
         700: '#374a32',

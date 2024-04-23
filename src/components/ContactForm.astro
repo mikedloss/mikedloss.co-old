@@ -1,11 +1,50 @@
 ---
+const errors = {
+  name: '',
+  email: '',
+  company: '',
+  description: '',
+}
+
 if (Astro.request.method === 'POST') {
+  console.log('here')
   try {
     const data = await Astro.request.formData()
     const name = data.get('name')
     const email = data.get('email')
     const company = data.get('company')
     const description = data.get('description')
+
+    if (typeof name !== 'string' || !name.length) {
+      errors.name += 'Name is needed'
+    }
+    if (typeof email !== 'string' || !email.length) {
+      errors.email += 'Email is needed'
+    }
+    if (typeof company !== 'string' || !company.length) {
+      errors.company += 'Company is needed'
+    }
+    if (typeof description !== 'string' || !description.length) {
+      errors.description += 'Description is needed'
+    }
+
+    console.log('here', { data })
+
+    const hasErrors = Object.values(errors).some(m => m)
+    console.log('here2', { hasErrors, errors })
+    if (!hasErrors) {
+      console.log(
+        'here3',
+        JSON.stringify({ name, email, company, description }),
+      )
+      const response = await fetch('/api/contact/send', {
+        method: 'POST',
+        body: JSON.stringify({ name, email, company, description }),
+      })
+      const result = await response.json()
+      console.log({ result })
+    }
+
     console.log({ name, email, company, description })
   } catch (error) {
     if (error instanceof Error) {

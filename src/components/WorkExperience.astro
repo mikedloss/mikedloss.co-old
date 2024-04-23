@@ -1,0 +1,34 @@
+---
+import LanguageSkill from './Skills/LanguageSkill.astro'
+import ServiceSkill from './Skills/ServiceSkill.astro'
+import ToolSkill from './Skills/ToolSkill.astro'
+
+interface Props {
+  place: string
+  location: string
+  title: string
+  description: string
+  languages: string[]
+  tools: string[]
+  services: string[]
+}
+
+const { place, location, title, description, languages, tools, services } =
+  Astro.props
+---
+
+<div class='flex flex-col mb-4 last:mb-0'>
+  <div class='flex gap-2'>
+    <h3 class='font-bold'>{place}</h3>|
+    <p>{title}</p>|
+    <p>{location}</p>
+  </div>
+  <p>
+    {description}
+  </p>
+  <div class='flex flex-wrap gap-x-2'>
+    {languages.map(language => <LanguageSkill label={language} />)}
+    {tools.map(tool => <ToolSkill label={tool} />)}
+    {services.map(service => <ServiceSkill label={service} />)}
+  </div>
+</div>

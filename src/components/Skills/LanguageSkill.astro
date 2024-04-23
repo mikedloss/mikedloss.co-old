@@ -1,0 +1,11 @@
+---
+import Skill from './Skill.astro'
+
+interface Props {
+  label: string
+}
+
+const { label } = Astro.props
+---
+
+<Skill label={label} color='bermuda-gray' />

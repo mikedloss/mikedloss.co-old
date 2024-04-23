@@ -1,0 +1,104 @@
+[
+  {
+    "place": "Silo",
+    "location": "Remote",
+    "title": "Software Developer",
+    "description": "From March 2024, Im a full time software developer at Silo focusing on building front-ends on the Capital team. Were focused on allowing users to use Instant Pay and Cash Advance for their business, so a lot of my work has been around building a great onboarding experience for new and existing Silo users.",
+    "languages": ["Typescript", "Javascript", "CSS", "Go"],
+    "tools": [
+      "React",
+      "React Native",
+      "Vite",
+      "Styled Components",
+      "GraphQL",
+      "Storybook",
+      "i18n",
+      "Redux",
+      "Figma",
+      "PostgreSQL",
+      "Kafka"
+    ],
+    "services": ["AWS", "Jenkins", "Docker"]
+  },
+  {
+    "place": "Brex",
+    "location": "Remote",
+    "title": "Senior Software Engineer",
+    "description": "For my first two years I worked on the Admin and Employee Onboarding teams under the Growth organization, focusing on getting more users into Brex and making their first transaction faster than before. During my third year I was on the Design Systems team, which owned brex.com and an internal monorepo of components.",
+    "languages": ["Typescript", "Javascript", "HTML", "CSS", "Elixir"],
+    "tools": [
+      "React",
+      "React Native",
+      "Webpack",
+      "Styled Components",
+      "Expo",
+      "GraphQL",
+      "XState",
+      "Storybook",
+      "Next.JS",
+      "i18n",
+      "Framer Motion",
+      "Jotai",
+      "Figma"
+    ],
+    "services": [
+      "Vercel",
+      "Github Actions",
+      "Monorepos",
+      "Sanity",
+      "Kubernetes"
+    ]
+  },
+  {
+    "place": "Little Caesars",
+    "location": "Detroit, MI / Remote",
+    "title": "Senior Software Engineer",
+    "description": "I was here for two almost year long stints. The first ten months I was on the Web team focused on building the Online Ordering platform and building marketing websites for countries where LC has stores. My second ten months I was on a team focused on building the in-store ordering system, which connects the front of house register, back of house screens, menus, and Pizza Portal into one connected system.",
+    "languages": ["Typescript", "Javascript", "HTML", "CSS", "C#"],
+    "tools": [
+      "React",
+      "Webpack",
+      "Styled Components",
+      "GraphQL",
+      "Storybook",
+      "i18n",
+      "Gatsby"
+    ],
+    "services": ["AWS", "Sanity", "Jenkins"]
+  },
+  {
+    "place": "Brushfire",
+    "location": "Remote",
+    "title": "Full Stack React Developer",
+    "description": "I was on a very small engineering team focused on building a WYSIWYG platform that lets users build mobile apps. We built custom integrations to allow customers to build apps for conferences and events that were used by tens of thousands of users. We later pivoted to building a streaming platform in 2020 that let organization live stream their events to people online.",
+    "languages": ["Typescript", "Javascript", "HTML", "CSS", "C#"],
+    "tools": [
+      "React",
+      "React Native",
+      "Node.JS",
+      "GraphQL",
+      "RESTful APIs",
+      "i18n",
+      "MongoDB"
+    ],
+    "services": ["Jenkins", "Docker", "Google Cloud Platform"]
+  },
+  {
+    "place": "Rocket Mortgage",
+    "location": "Detroit, MI",
+    "title": "Software Engineer",
+    "description": "I was on a team building internal tools of Servicing team members, allowing them to underwrite and decision on mortgages for users quickly and efficiently while reducing risk",
+    "languages": ["Typescript", "Javascript", "HTML", "CSS"],
+    "tools": ["Angular", "Node.JS", "RESTful APIs", "MSSQL"],
+    "services": ["Jenkins", "AWS"]
+  },
+  {
+    "place": "IHS Automotive",
+    "location": "Southfield, MI",
+    "title": "Software Engineer",
+    "description": "I joined a team that worked on monthly reporting for almost all auto manufacturers in North America. Later on, I built an automated platform using Machine Learning that was 60x faster at doing repetitive monthly tasks.",
+    "languages": ["Python", "PL/SQL"],
+    "tools": ["Django", "MySQL"],
+    "services": []
+  }
+]

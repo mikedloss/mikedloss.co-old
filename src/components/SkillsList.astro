@@ -1,0 +1,27 @@
+---
+import LanguageSkill from './Skills/LanguageSkill.astro'
+import ServiceSkill from './Skills/ServiceSkill.astro'
+import Skill from './Skills/Skill.astro'
+import ToolSkill from './Skills/ToolSkill.astro'
+
+interface Props {
+  list: string[]
+  type: 'language' | 'service' | 'tool'
+}
+
+const { list, type } = Astro.props
+---
+
+<div class='flex gap-y-1 gap-x-2 flex-wrap'>
+  {
+    list.map((skill: string) => {
+      if (type === 'language') {
+        return <LanguageSkill label={skill} />
+      }
+      if (type === 'service') {
+        return <ServiceSkill label={skill} />
+      }
+      return <ToolSkill label={skill} />
+    })
+  }
+</div>

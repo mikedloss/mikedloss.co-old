@@ -44,12 +44,37 @@ export default {
         900: '#253123',
         950: '#141b13',
       },
+      cosmos: {
+        50: '#fdf3f4',
+        100: '#fbe5e7',
+        200: '#fadadd',
+        300: '#f3aeb4',
+        400: '#ea7f89',
+        500: '#dd5663',
+        600: '#c93947',
+        700: '#a92c38',
+        800: '#8c2831',
+        900: '#75272e',
+        950: '#3f1014',
+      },
     },
     extend: {
+      animation: {
+        fade: 'fadeIn .5s ease-in-out',
+      },
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
+      keyframes: {
+        fadeIn: {
+          from: { opacity: 0 },
+          to: { opacity: 1 },
+        },
+      },
+      width: {
+        'screen-content': 'calc(100vw - 4rem)',
+      },
     },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-animate')],
 }

@@ -6,7 +6,6 @@ import SkillsList from '../components/SkillsList.astro'
 import WorkExperience from '../components/WorkExperience.astro'
 import Layout from '../layouts/Layout.astro'
 import FunderlineLink from '../components/FunderlineLink.astro'
-import ContactForm from '../components/ContactForm.astro'
 ---
 
 <Layout title='mikedloss.co'>
@@ -60,15 +59,14 @@ import ContactForm from '../components/ContactForm.astro'
       </div>
       <div class='flex w-full md:w-1/2'>
         <p>
-          Fill out the form below with your info and what you're looking for, or
-          send me an email at
+          Send me an email at
           <FunderlineLink href='mailto:hey@mikedloss.co' classes='font-bold'>
             hey@mikedloss.co
           </FunderlineLink>
+          with your name, company, and what you're looking for :)
         </p>
       </div>
     </div>
-    <ContactForm />
     <div class='h-20'></div>
   </main>
 </Layout>
